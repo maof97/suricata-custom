@@ -1,1 +1,1 @@
-alert tcp $EXTERNAL_NET any -> $HOME_NET [2277] (msg:"(CUSTOM) External SSH Connection to Proxy."; classtype:bad-unknown; sid:9900022; rev:1; severity:2;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET [2277:2277] (msg:"External SSH Connection to Proxy."; classtype:bad-unknown; sid:9900022; rev:1; severity:2;)
